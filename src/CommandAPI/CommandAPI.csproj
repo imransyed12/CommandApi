@@ -5,6 +5,7 @@
     <UserSecretsId>116cae59-5fc9-4ccb-bb7e-91c4f983ca8c</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.0" />
