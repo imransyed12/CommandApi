@@ -40,6 +40,7 @@ namespace CommandAPI.Controllers
             return Ok(_mapper.Map<CommandReadDto>(commandItem));
         }
 
+        // Create command Controller
         [HttpPost]
         public ActionResult<CommandCreateDto> CreateCommand(CommandCreateDto commandCreateDto)
         {
