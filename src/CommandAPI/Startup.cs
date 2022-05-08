@@ -43,7 +43,7 @@ namespace CommandAPI
                         .AddJwtBearer(opt=> 
                         {
                             opt.Audience = Configuration["ResourceId"];
-                            opt.Authority = $"{Configuration["Instance"]}{Configuration["TenantId"]}";
+                            opt.Authority = string.Format("https://login.microsoftonline.com/{0}/",  Configuration["TenantId"]),
                         });
             
             services.AddControllers().AddNewtonsoftJson(s=>
